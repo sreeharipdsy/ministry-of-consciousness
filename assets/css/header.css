@@ -131,3 +131,10 @@ img {
 .header {
   padding: 0;
 }
+
+@media (max-width: 991px) {
+  .sidebar .main {margin-inline: 2em;}
+  .sidebar .main li {padding-block: 0;}
+  .sidebar .sub li a {font-size: 14px !important;}
+  .sidebar .main li a {font-size: 16px;}
+}

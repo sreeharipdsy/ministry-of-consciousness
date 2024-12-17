@@ -129,135 +129,36 @@ section {
   color: #000000;
 }
 
-@-webkit-keyframes focus-in-expand {
-  0% {
-    letter-spacing: 0px;
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
 
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes focus-in-expand {
-  0% {
-    letter-spacing: 0px;
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-/* .section-one .hero-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  -webkit-animation: tracking-in-expand 0.4s ease-in-out both;
-  animation: tracking-in-expand 0.4s ease-in-out both;
-} */
-@-webkit-keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-
-  40% {
-    opacity: 0.6;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-
-  40% {
-    opacity: 0.6;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Add animation (fade in and fade out) */
-
-@keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
 
 @media (max-width: 992px) {
-  .section-one .row {
-    margin-top: 0;
+  .section-one::before {
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    animation: none;
   }
-
-  @-webkit-keyframes focus-in-expand {
-    0% {
-      letter-spacing: -5px;
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
+  .section-one {padding-top: 100px;}
+  .section-one .row {margin-top: 0;}
+  .section-one img {
+    width: 90%;
+    margin: auto;
   }
-
-  @keyframes focus-in-expand {
-    0% {
-      letter-spacing: -5px;
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
+  .section-one .container {padding-inline: 1em;}
+  .section-one .onebythree {gap: 10px;}
+  .section-one .onebythree h1 {
+    font-size: 26px;
+    line-height: 50px;
   }
+  .section-one h2 {font-size: 24px;}
+  .section-one p {
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .section-one a {font-size: 15px;}
 }
+
 
 /* SECTION - TWO */
 .section-two {
@@ -413,14 +314,23 @@ section {
   left: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .slide-content {
-    margin: 0 10px;
+@media (max-width: 991px) {
+  .section-two {padding-top: 80px;}
+  .section-two .container {padding-inline: 1em;}
+  .image-content, .card-content {
+    flex-direction: column;
+    gap: 1em;
+    padding-inline: 0em;
   }
-
-  .swiper-navBtn {
-    display: none;
+  .description {
+    font-size: 15px;
+    line-height: 25px;
   }
+  .section-two .dwl-parent {padding: 1.5em;}
+  .section-two .dwl {max-width: 150px;}
+  .section-two img {max-width: 200px;}
+  .swiper-button-next, .swiper-button-prev {top: 60% !important;}
+  .section-two h2, .section-three h2, .section-four h2 {font-size: 26px;}
 }
 
 
@@ -464,6 +374,23 @@ section {
   width: 75%;
   margin-bottom: 0.5em;
 }
+@media (max-width: 991px) {
+  .section-three {padding-top: 80px;}
+  .section-three .container {padding-inline: 1em;}
+  .section-three .parent {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: 1em;
+  }
+  .section-three .box {padding: 1em; align-items: center;}
+  .section-three .bullets img {width: 2.5em;}
+  .section-three h3 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+}
+
 
 /* SECTION - FOUR */
 .section-four {
@@ -522,4 +449,15 @@ section {
   padding: 8px 32px;
   font-size: 21px;
   margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+  .section-four {padding-top: 80px;}
+  .section-four .container {padding-inline: 1em; padding-bottom: 0;}
+  .section-four p {font-size: 16px; line-height: 30px;}
+  .section-four button {font-size: 16px; display: flex; margin: auto; margin-top: 25px; text-decoration: none;}
+  .section-four::before {
+    bottom: -10%;
+    width: 90%;
+  }
 }
