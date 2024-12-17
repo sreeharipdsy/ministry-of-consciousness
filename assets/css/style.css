@@ -331,6 +331,7 @@ section {
   .section-two img {max-width: 200px;}
   .swiper-button-next, .swiper-button-prev {top: 60% !important;}
   .section-two h2, .section-three h2, .section-four h2 {font-size: 26px;}
+  .swiper-pagination-bullets-dynamic {bottom: 0 !important;}
 }
 
 
