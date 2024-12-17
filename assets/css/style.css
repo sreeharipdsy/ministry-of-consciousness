@@ -455,6 +455,7 @@ section {
   .section-four {padding-top: 80px;}
   .section-four .container {padding-inline: 1em; padding-bottom: 0;}
   .section-four p {font-size: 16px; line-height: 30px;}
+  .section-four a {text-decoration: none;}
   .section-four button {font-size: 16px; display: flex; margin: auto; margin-top: 25px; text-decoration: none;}
   .section-four::before {
     bottom: -10%;

@@ -33,4 +33,5 @@
   .footer .row {gap: 25px;}
   .footer p {font-size: 14px; line-height: 30px;}
   .footer button {display: flex; margin: auto; margin-top: 25px;}
+  .footer a {text-decoration: none;}
 }
