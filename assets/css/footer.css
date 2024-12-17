@@ -1,0 +1,25 @@
+/* FOOTER */
+.footer {
+  padding-block: 30px;
+}
+
+.footer .row {
+  justify-content: space-between; 
+}
+
+.footer p {
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;  
+}
+
+.footer button {
+  border: none;
+  color: #E9A447;
+  background: #820D0D;
+  border-radius: 10px;
+  padding: 8px 32px;
+  font-size: 14px;
+}
