@@ -57,7 +57,7 @@ section {
   background-image: url('../images/rudraksh.svg'); 
   background-repeat: no-repeat;
   background-size: contain; 
-  opacity: 1;
+  opacity: 0.75;
   transform-origin: center;
   animation: rotateBackground 5s linear infinite; 
   z-index: 0;
