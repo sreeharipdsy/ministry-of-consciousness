@@ -47,7 +47,6 @@ section {
   overflow: hidden; 
 }
 
-
 .section-one::before {
   content: "";
   position: absolute;
@@ -55,7 +54,7 @@ section {
   left: 0; 
   width: 70%; 
   height: 70%;
-  background-image: url('/assets/images/rudraksh.svg'); 
+  background-image: url('../images/rudraksh.svg'); 
   background-repeat: no-repeat;
   background-size: contain; 
   opacity: 1;
@@ -405,7 +404,7 @@ section {
   right: 0; 
   width: 60%; 
   height: 90%;
-  background-image: url('/assets/images/rudraksh.svg'); 
+  background-image: url('../images/rudraksh.svg'); 
   background-repeat: no-repeat;
   background-size: contain; 
   opacity: 0.5;
