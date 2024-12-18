@@ -193,6 +193,7 @@ section {
 .card {
   border: none !important;
   cursor: auto;
+  margin-bottom: 1em;
 }
 
 .image-content,
