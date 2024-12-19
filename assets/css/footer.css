@@ -15,6 +15,8 @@
   text-align: left;  
 }
 
+.footer img {animation: rotateImage 30s infinite linear;}
+
 .footer button {
   border: none;
   color: #E9A447;
